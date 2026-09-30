@@ -125,19 +125,20 @@ function header({ overlay = false, current = "" }) {
 ${announcementBar()}
 <header class="${cls}" id="site-header">
   <div class="container header__inner">
-    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">${ICONS.menu}</button>
-    <nav class="nav" aria-label="Main navigation">
-      ${NAV.map((n) => `<a href="${n.href}"${current === n.href ? ' class="is-current"' : ""}>${n.label}</a>`).join("\n      ")}
-    </nav>
+    <div class="header__left">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">${ICONS.menu}</button>
+      <a class="header__avana" href="about.html" title="Avana Surgical Systems"><img src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="2000" height="742"></a>
+    </div>
     <a class="brand" href="index.html" aria-label="e.CHI home">${echiLogo(logoColor)}</a>
-    <div class="header__utils">
-      <a class="icon-btn" href="products.html" aria-label="Search">${ICONS.search}</a>
-      <a class="icon-btn" href="contact.html" aria-label="Account">${ICONS.account}</a>
-      <button class="icon-btn" id="cart-btn" aria-label="Cart">${ICONS.cart}<span class="cart-count" id="cart-count">0</span></button>
-      <a class="distributor-badge" href="about.html" title="Avana Surgical Systems — Authorised Distributor, India">
-        <span class="distributor-badge__img"><img src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="404" height="150" loading="lazy"></span>
-        <span class="distributor-badge__label">Authorised Distributor · India</span>
-      </a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Main navigation">
+        ${NAV.map((n) => `<a href="${n.href}"${current === n.href ? ' class="is-current"' : ""}>${n.label}</a>`).join("\n        ")}
+      </nav>
+      <div class="header__utils">
+        <a class="icon-btn" href="products.html" aria-label="Search">${ICONS.search}</a>
+        <a class="icon-btn" href="contact.html" aria-label="Account">${ICONS.account}</a>
+        <button class="icon-btn" id="cart-btn" aria-label="Cart">${ICONS.cart}<span class="cart-count" id="cart-count">0</span></button>
+      </div>
     </div>
   </div>
 </header>
