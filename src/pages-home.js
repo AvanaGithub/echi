@@ -77,7 +77,11 @@ function homeMain() {
 <section class="hero" aria-label="Highlights">
   <div class="hero__slide is-active">
     <div class="hero__media ph-box ph--hero-1">
-      <!-- PLACEHOLDER: hero image 1 from Veya — couple walking on golden hillside -->
+      <!-- Drop hero video 1 at assets/video/hero-1.mp4 (+ poster hero-1.jpg).
+           Gradient below remains the fallback until the file exists. -->
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-1.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/video/hero-1.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="hero__content container">
       <h1 class="display hero__heading">Less knee pain.<br><strong>More movement.</strong></h1>
@@ -87,7 +91,10 @@ function homeMain() {
   </div>
   <div class="hero__slide">
     <div class="hero__media ph-box ph--hero-2">
-      <!-- PLACEHOLDER: hero image 2 from Veya — water / wave imagery -->
+      <!-- Drop hero video 2 at assets/video/hero-2.mp4 (+ poster hero-2.jpg). -->
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-2.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/video/hero-2.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="hero__content container">
       <h1 class="display hero__heading">A new era of<br><strong>regeneration</strong></h1>

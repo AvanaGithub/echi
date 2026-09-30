@@ -282,6 +282,15 @@ body.has-hero .hero { margin-top: calc(var(--header-h) * -1); }
 }
 .hero__slide.is-active { opacity: 1; z-index: 2; }
 .hero__media { position: absolute; inset: 0; }
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero__media::after { z-index: 1; }
 .hero__media::after {
   content: "";
   position: absolute; inset: 0;
