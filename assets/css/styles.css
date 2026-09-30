@@ -174,7 +174,7 @@ body.has-hero .hero { margin-top: calc(var(--header-h) * -1); }
 
 .header__left { display: flex; align-items: center; gap: 10px; }
 .header__avana { display: inline-flex; align-items: center; }
-.header__avana img { height: 26px; width: auto; display: block; }
+.header__avana img { height: 46px; width: auto; display: block; }
 .header--overlay:not(.is-solid) .header__avana img { filter: brightness(0) invert(1); }
 .header__right { display: flex; align-items: center; justify-content: flex-end; gap: clamp(12px, 1.6vw, 24px); }
 
@@ -853,7 +853,7 @@ body.has-hero .hero { margin-top: calc(var(--header-h) * -1); }
   .brand { justify-content: center; }
 }
 @media (max-width: 480px) {
-  .header__avana img { height: 20px; }
+  .header__avana img { height: 32px; }
 }
 @media (max-width: 560px) {
   :root { --header-h: 68px; }
