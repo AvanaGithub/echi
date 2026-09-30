@@ -75,14 +75,15 @@ function homeMain() {
   return `
 <!-- ============================== HERO SLIDER ============================== -->
 <section class="hero" aria-label="Highlights">
+  <!-- Single shared background video for all hero slides.
+       File: assets/video/hero-1.mp4 (+ optional poster hero-1.jpg).
+       The gradient below remains the fallback if the file is missing. -->
+  <div class="hero__media ph-box ph--hero-1">
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-1.jpg" aria-hidden="true" tabindex="-1">
+      <source src="assets/video/hero-1.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="hero__slide is-active">
-    <div class="hero__media ph-box ph--hero-1">
-      <!-- Drop hero video 1 at assets/video/hero-1.mp4 (+ poster hero-1.jpg).
-           Gradient below remains the fallback until the file exists. -->
-      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-1.jpg" aria-hidden="true" tabindex="-1">
-        <source src="assets/video/hero-1.mp4" type="video/mp4">
-      </video>
-    </div>
     <div class="hero__content container">
       <h1 class="display hero__heading">Less knee pain.<br><strong>More movement.</strong></h1>
       <p class="hero__chip">The <strong>e.CHI Knee Osteoarthritis</strong> chip is a non-invasive device for pain relief in knee osteoarthritis, clinically evaluated in Europe.</p>
@@ -90,12 +91,6 @@ function homeMain() {
     </div>
   </div>
   <div class="hero__slide">
-    <div class="hero__media ph-box ph--hero-2">
-      <!-- Drop hero video 2 at assets/video/hero-2.mp4 (+ poster hero-2.jpg). -->
-      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-2.jpg" aria-hidden="true" tabindex="-1">
-        <source src="assets/video/hero-2.mp4" type="video/mp4">
-      </video>
-    </div>
     <div class="hero__content container">
       <h1 class="display hero__heading">A new era of<br><strong>regeneration</strong></h1>
       <p class="hero__chip">Portable frequency therapy</p>
