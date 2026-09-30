@@ -134,11 +134,6 @@ ${announcementBar()}
       <nav class="nav" aria-label="Main navigation">
         ${NAV.map((n) => `<a href="${n.href}"${current === n.href ? ' class="is-current"' : ""}>${n.label}</a>`).join("\n        ")}
       </nav>
-      <div class="header__utils">
-        <a class="icon-btn" href="products.html" aria-label="Search">${ICONS.search}</a>
-        <a class="icon-btn" href="contact.html" aria-label="Account">${ICONS.account}</a>
-        <button class="icon-btn" id="cart-btn" aria-label="Cart">${ICONS.cart}<span class="cart-count" id="cart-count">0</span></button>
-      </div>
     </div>
   </div>
 </header>
