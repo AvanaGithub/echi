@@ -24,6 +24,18 @@ const TYPES = {
 
 http
   .createServer((req, res) => {
+    /* dev-only upload endpoint: POST /upload?name=<file> writes into assets/img */
+    if (req.method === "POST" && req.url.startsWith("/upload")) {
+      const name = (new URL(req.url, "http://x").searchParams.get("name") || "").replace(/[^a-z0-9._-]/gi, "");
+      if (!/^[a-z0-9._-]+\.(webp|png|jpg)$/i.test(name)) { res.writeHead(400); return res.end("bad name"); }
+      const chunks = [];
+      req.on("data", (c) => chunks.push(c));
+      req.on("end", () => {
+        fs.writeFileSync(path.join(ROOT, "assets", "img", name), Buffer.concat(chunks));
+        res.writeHead(200); res.end("saved " + name);
+      });
+      return;
+    }
     let urlPath = decodeURIComponent(req.url.split("?")[0]);
     if (urlPath.endsWith("/")) urlPath += "index.html";
     const filePath = path.normalize(path.join(ROOT, urlPath));

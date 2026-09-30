@@ -126,7 +126,10 @@ ${announcementBar()}
   <div class="container header__inner">
     <div class="header__left">
       <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">${ICONS.menu}</button>
-      <a class="header__avana" href="about.html" title="Avana Surgical Systems"><img src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="2000" height="742"></a>
+      <a class="header__avana" href="about.html" title="Avana Surgical Systems">
+        <img class="header__avana-color" src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="2000" height="742">
+        <img class="header__avana-light" src="assets/img/avana-logo-light.webp" alt="" aria-hidden="true" width="2000" height="742">
+      </a>
     </div>
     <a class="brand" href="index.html" aria-label="e.CHI home">${echiLogo(logoColor)}</a>
     <div class="header__right">
@@ -199,7 +202,7 @@ function footer() {
     <div class="footer__meta">
       <div class="footer__distributor">
         <a class="distributor-badge distributor-badge--footer" href="about.html">
-          <span class="distributor-badge__img"><img src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="404" height="150" loading="lazy"></span>
+          <span class="distributor-badge__img"><img src="assets/img/avana-logo-light.webp" alt="Avana Surgical Systems" width="2000" height="742" loading="lazy"></span>
           <span class="distributor-badge__label">Authorised Distributor for India</span>
         </a>
       </div>

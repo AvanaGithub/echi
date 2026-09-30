@@ -175,7 +175,10 @@ body.has-hero .hero { margin-top: calc(var(--header-h) * -1); }
 .header__left { display: flex; align-items: center; gap: 10px; }
 .header__avana { display: inline-flex; align-items: center; }
 .header__avana img { height: 46px; width: auto; display: block; }
-.header--overlay:not(.is-solid) .header__avana img { filter: brightness(0) invert(1); }
+/* colour logo on light/solid headers; white+gold light version over dark hero */
+img.header__avana-light { display: none; }
+.header--overlay:not(.is-solid) img.header__avana-color { display: none; }
+.header--overlay:not(.is-solid) img.header__avana-light { display: block; }
 .header__right { display: flex; align-items: center; justify-content: flex-end; gap: clamp(12px, 1.6vw, 24px); }
 
 .nav { display: flex; align-items: center; gap: clamp(10px, 1.5vw, 24px); }
@@ -232,10 +235,6 @@ body.has-hero .hero { margin-top: calc(var(--header-h) * -1); }
 .distributor-badge__logo .avana-a { color: var(--accent); }
 .distributor-badge__img { display: inline-flex; align-items: center; }
 .distributor-badge__img img { height: 22px; width: auto; display: block; }
-/* white knockout on dark surfaces (transparent header over hero, dark footer);
-   full-colour logo appears on light/solid headers */
-.header--overlay:not(.is-solid) .distributor-badge__img img,
-.footer .distributor-badge__img img { filter: brightness(0) invert(1); }
 .distributor-badge--footer .distributor-badge__img img { height: 34px; }
 .distributor-badge--footer { gap: 8px; }
 .distributor-badge__label { font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.75; white-space: nowrap; }
