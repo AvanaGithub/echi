@@ -857,11 +857,11 @@ img.header__avana-light { display: none; }
 @media (max-width: 1160px) {
   .nav { display: none; }
   .menu-btn { display: inline-flex; }
-  .header__inner { grid-template-columns: auto 1fr auto; }
-  .brand { justify-content: center; }
+  .header__left { gap: 6px; }
 }
 @media (max-width: 480px) {
-  .header__avana img { height: 32px; }
+  .header__avana img { height: 26px; }
+  .menu-btn { padding: 6px; }
 }
 @media (max-width: 560px) {
   :root { --header-h: 68px; }
