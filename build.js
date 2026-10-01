@@ -9,8 +9,8 @@ const { products } = require("./src/products");
 const { homeMain, faqSchema, FAQ_HOME } = require("./src/pages-home");
 const { collectionMain, pdpMain, productSchema } = require("./src/pages-products");
 const { functionMain, storiesMain, aboutMain } = require("./src/pages-info");
-const { contactMain, faqMain, partnerMain, grievanceMain, FAQ_EXTRA } = require("./src/pages-contact");
-const { shippingMain, returnsMain, termsMain, privacyMain } = require("./src/pages-legal");
+const { contactMain, faqMain, partnerMain, FAQ_EXTRA } = require("./src/pages-contact");
+const { shippingMain, returnsMain } = require("./src/pages-legal");
 
 const OUT = __dirname;
 const org = organizationSchema();
@@ -102,30 +102,6 @@ const pages = [
       "7-day returns on unopened e.CHI chips, free replacement for defective or damaged items, refunds in 7–10 working days. Avana Surgical Systems, Chennai.",
     schema: [org],
     main: returnsMain(),
-  },
-  {
-    path: "terms.html",
-    title: "Terms of Service | e.CHI India — Avana Surgical Systems",
-    description:
-      "Terms of service for echi-india: orders, GST-inclusive pricing, payments via Razorpay and COD, product claims, liability and governing law.",
-    schema: [org],
-    main: termsMain(),
-  },
-  {
-    path: "privacy-policy.html",
-    title: "Privacy Policy (DPDP Act 2023) | e.CHI India",
-    description:
-      "How Avana Surgical Systems collects, uses and protects your personal data under India's Digital Personal Data Protection Act 2023 — consent, cookies, your rights and grievance escalation.",
-    schema: [org],
-    main: privacyMain(),
-  },
-  {
-    path: "grievance-redressal.html",
-    title: "Grievance Redressal — Grievance Officer | e.CHI India",
-    description:
-      "Raise a complaint about orders, delivery, refunds or data protection. Acknowledgement within 48 hours, resolution within 30 days, per the Consumer Protection (E-Commerce) Rules 2020.",
-    schema: [org],
-    main: grievanceMain(),
   },
 ];
 

@@ -53,7 +53,6 @@ function complianceBox(p) {
       <dt>MRP</dt><dd>${formatINR(p.price)} (incl. of all taxes) <span class="badge-pending">Placeholder</span></dd>
       <dt>Net contents</dt><dd>1 frequency chip + fixing plasters</dd>
       <dt>Customer care</dt><dd>${SITE.phone} · ${SITE.email}</dd>
-      <dt>Grievance officer</dt><dd><a class="text-link" href="grievance-redressal.html">Grievance Redressal page</a></dd>
     </dl>
   </div>`;
 }

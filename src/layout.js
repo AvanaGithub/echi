@@ -195,7 +195,6 @@ function footer() {
       </div>
       ${col("e.CHI", [["About Us", "about.html"], ["Stories", "stories.html"], ["Products", "products.html"], ["Technology", "function.html"]])}
       ${col("Service", [["Contact", "contact.html"], ["FAQ", "faq.html"], ["Shipping", "shipping-policy.html"], ["Returns & Refunds", "returns-refunds.html"]])}
-      ${col("Legal", [["Terms", "terms.html"], ["Privacy Policy", "privacy-policy.html"], ["Grievance Redressal", "grievance-redressal.html"]]).replace("</ul>", '<li><a href="#" data-open-cookie>Cookie settings</a></li></ul>')}
       ${col("Partner", [["Become a partner", "become-a-partner.html"]])}
     </div>
     <div class="footer__meta">
@@ -222,14 +221,6 @@ function footer() {
 </footer>
 <button class="back-to-top" id="back-to-top" aria-label="Back to top">${ICONS.arrowUp}</button>
 <div class="toast" id="toast" role="status"></div>
-<div class="cookie-bar" id="cookie-bar" role="dialog" aria-label="Cookie consent">
-  <p>We use cookies to run this site and — with your consent — for analytics and marketing, in line with the DPDP Act 2023. You can change your choice anytime via “Cookie settings”.</p>
-  <div class="cookie-bar__actions">
-    <button class="btn btn--sm" data-cookie="all">Accept all</button>
-    <button class="btn btn--ghost btn--sm" data-cookie="essential">Essential only</button>
-    <a class="btn btn--ghost btn--sm" href="privacy-policy.html">Learn more</a>
-  </div>
-</div>
 ${cartDrawer()}
 <script src="assets/js/main.js" defer></script>
 </body>

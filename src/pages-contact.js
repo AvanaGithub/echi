@@ -40,7 +40,7 @@ function contactMain() {
         </div>
         <div class="field full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="How can we help?"></textarea></div>
         <div class="full"><button class="btn" type="submit">Send enquiry</button></div>
-        <p class="form-note full">Your details are used only to answer your enquiry, per our <a class="text-link" href="privacy-policy.html">Privacy Policy</a>.</p>
+        <p class="form-note full">Your details are used only to answer your enquiry.</p>
       </form>
     </div>
     <div>

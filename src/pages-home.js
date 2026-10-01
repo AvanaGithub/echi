@@ -231,7 +231,7 @@ ${uspStrip()}
         <input type="tel" name="whatsapp" placeholder="WhatsApp number (+91…)" pattern="^(\\+91[\\-\\s]?)?[6-9][0-9]{9}$" aria-label="WhatsApp number">
         <button class="btn" type="submit">Subscribe</button>
       </form>
-      <p class="form-note">By subscribing you agree to our <a class="text-link" href="privacy-policy.html">Privacy Policy</a> (DPDP Act 2023).</p>
+      <p class="form-note">No spam — unsubscribe anytime.</p>
     </div>
   </div>
 </section>`;
