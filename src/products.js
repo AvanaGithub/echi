@@ -33,18 +33,6 @@ const products = [
     benefits: ["For localised, everyday discomfort", "Wear day and night", "Active for up to 9 months", "Skin-friendly silicone"],
   },
   {
-    slug: "pollenfriend",
-    name: "PollenFriend",
-    eyebrow: "e.CHI Frequency Chips",
-    price: 9999, // PLACEHOLDER — confirm INR MRP
-    short: "Support for the body during pollen season — a natural companion for allergy-prone months.",
-    long: [
-      "For many people, spring and harvest seasons mean streaming eyes and a running nose. PollenFriend was developed as a gentle, drug-free companion for exactly these months.",
-      "Worn like a patch, it carries frequency information intended to support the body's own regulation during pollen exposure — with no chemical agents, no drowsiness and nothing to remember to take.",
-    ],
-    benefits: ["Companion for pollen season", "Drug-free, no drowsiness", "Active for up to 9 months", "No chemical agents"],
-  },
-  {
     slug: "inflammationfriend",
     name: "InflammationFriend",
     eyebrow: "e.CHI Frequency Chips",
@@ -55,18 +43,6 @@ const products = [
       "Like every e.CHI chip, it is applied directly to the skin near the affected area, works without batteries or chemical agents, and remains active for up to nine months.",
     ],
     benefits: ["Supports the body's own regulation", "Ideal after sport and strain", "Active for up to 9 months", "No chemical agents"],
-  },
-  {
-    slug: "headfriend",
-    name: "HeadFriend",
-    eyebrow: "e.CHI Frequency Chips",
-    price: 9999, // PLACEHOLDER — confirm INR MRP
-    short: "A clear head for busy days — gentle frequency support worn at the neck or behind the ear.",
-    long: [
-      "Long screen days, traffic, deadlines — our heads carry a lot. HeadFriend was developed as a discreet everyday companion for exactly those days.",
-      "Worn at the neck or behind the ear, the chip is designed to support the body's own balance. It contains no chemical agents, causes no drowsiness and stays active for up to nine months.",
-    ],
-    benefits: ["Discreet to wear", "For busy, screen-heavy days", "Active for up to 9 months", "No chemical agents"],
   },
   {
     slug: "backfriend",
@@ -80,36 +56,10 @@ const products = [
     ],
     benefits: ["For desk workers and drivers", "Apply wherever needed", "Active for up to 9 months", "No chemical agents"],
   },
-  {
-    slug: "energyfriend",
-    name: "EnergyFriend",
-    eyebrow: "e.CHI Frequency Chips",
-    flag: "India range — TBC",
-    price: 9999, // PLACEHOLDER — confirm inclusion in India range and INR MRP
-    short: "A companion for balanced energy through demanding days. (Inclusion in the India range to be confirmed.)",
-    long: [
-      "EnergyFriend was developed for days that demand everything — early starts, travel, training. It is designed to support the body's own energetic balance so you can stay present from morning to evening.",
-      "Availability of this chip in the Indian range is currently being confirmed with Veya Frequencies.",
-    ],
-    benefits: ["For demanding days", "Wear discreetly on the body", "Active for up to 9 months", "No chemical agents"],
-  },
-  {
-    slug: "sleepfriend",
-    name: "SleepFriend",
-    eyebrow: "e.CHI Frequency Chips",
-    flag: "India range — TBC",
-    price: 9999, // PLACEHOLDER — confirm inclusion in India range and INR MRP
-    short: "A gentle companion for calmer evenings and restful nights. (Inclusion in the India range to be confirmed.)",
-    long: [
-      "Good days begin the night before. SleepFriend is designed as a gentle, drug-free companion for your evening wind-down and the body's natural night-time regeneration.",
-      "Availability of this chip in the Indian range is currently being confirmed with Veya Frequencies.",
-    ],
-    benefits: ["For evening wind-down", "Drug-free companion", "Active for up to 9 months", "No chemical agents"],
-  },
 ];
 
-/* Products shown on the homepage grid (original shows six) */
-const homeGrid = ["knee-osteoarthritis", "painfriend", "pollenfriend", "inflammationfriend", "headfriend", "backfriend"];
+/* Products shown on the homepage grid */
+const homeGrid = ["knee-osteoarthritis", "painfriend", "backfriend", "inflammationfriend"];
 
 function formatINR(n) {
   return "₹" + Number(n).toLocaleString("en-IN");

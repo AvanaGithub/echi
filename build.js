@@ -29,9 +29,9 @@ const pages = [
   {
     path: "products.html",
     current: "products.html",
-    title: "e.CHI Frequency Chips — Buy in India | Knee, Back, Head & More",
+    title: "e.CHI Frequency Chips — Buy in India | Knee, Pain, Back & Inflammation",
     description:
-      "Shop the full range of e.CHI frequency chips in India: Knee Osteoarthritis, PainFriend, BackFriend, HeadFriend and more. ₹ prices incl. GST, free shipping, genuine imported stock.",
+      "Shop the e.CHI frequency chip range in India: Knee Osteoarthritis, PainFriend, BackFriend and InflammationFriend. ₹ prices incl. GST, free shipping, genuine imported stock.",
     schema: [org],
     main: collectionMain(),
   },

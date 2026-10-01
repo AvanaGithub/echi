@@ -33,9 +33,9 @@ function contactMain() {
         <div class="field full"><label for="c-product">Product interest</label>
           <select id="c-product" name="product">
             <option value="">Select a product (optional)</option>
-            <option>Knee Osteoarthritis</option><option>PainFriend</option><option>PollenFriend</option>
-            <option>InflammationFriend</option><option>HeadFriend</option><option>BackFriend</option>
-            <option>EnergyFriend</option><option>SleepFriend</option><option>General enquiry</option>
+            <option>Knee Osteoarthritis</option><option>PainFriend</option>
+            <option>BackFriend</option><option>InflammationFriend</option>
+            <option>General enquiry</option>
           </select>
         </div>
         <div class="field full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="How can we help?"></textarea></div>
