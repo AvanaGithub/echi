@@ -108,7 +108,6 @@ function announcementBar() {
   const items = [
     '🏃 Recommended by professional athletes',
     '🌱 Natural, drug-free alternative',
-    '🤝 <a href="become-a-partner.html">Become an e.CHI partner in India →</a>',
   ];
   return `<div class="announce" role="region" aria-label="Announcements">
     <div class="announce__track">
