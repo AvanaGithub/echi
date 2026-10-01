@@ -201,7 +201,6 @@ function footer() {
       <div class="footer__distributor">
         <a class="distributor-badge distributor-badge--footer" href="about.html">
           <span class="distributor-badge__img"><img src="assets/img/avana-logo-light.webp" alt="Avana Surgical Systems" width="2000" height="742" loading="lazy"></span>
-          <span class="distributor-badge__label">Authorised Distributor for India</span>
         </a>
       </div>
       <p class="footer__disclaimer">
