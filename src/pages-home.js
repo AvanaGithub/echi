@@ -28,7 +28,7 @@ function productCard(p) {
     <h3 class="product-card__name"><a href="product-${p.slug}.html">${p.name}</a></h3>
     <div class="product-card__price">${formatINR(p.price)} <small>incl. GST</small></div>
     <div class="product-card__quick">
-      <button class="btn" data-add-to-cart data-id="${p.slug}" data-name="${p.name}" data-price="${p.price}">Quickshop · ${formatINR(p.price)}</button>
+      <a class="btn" href="product-${p.slug}.html">Learn more</a>
     </div>
   </article>`;
 }
