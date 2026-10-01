@@ -251,7 +251,6 @@ function footer() {
       </div>
       ${col("e.CHI", [["About Us", "about.html"], ["Stories", "stories.html"], ["Products", "products.html"], ["Technology", "function.html"]])}
       ${col("Service", [["Contact", "contact.html"], ["FAQ", "faq.html"], ["Shipping", "shipping-policy.html"], ["Returns & Refunds", "returns-refunds.html"]])}
-      ${col("Partner", [["Become a partner", "become-a-partner.html"]])}
     </div>
     ${officesBlock()}
     <div class="footer__meta">
