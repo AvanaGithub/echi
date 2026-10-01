@@ -505,6 +505,42 @@ img.header__avana-light { display: none; }
 .footer__brand svg { height: 46px; width: auto; margin-bottom: 18px; }
 .footer h4 { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; font-weight: 600; margin-bottom: 16px; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.footer__brand-logo { height: 44px; width: auto; display: block; margin-bottom: 18px; }
+
+/* ------------------------------------------------------- footer offices */
+.footer__offices {
+  padding: clamp(28px, 4vw, 44px) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+.office-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.office-tab {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.85);
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.office-tab:hover { border-color: var(--accent); color: var(--accent); }
+.office-tab.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.office-panel { display: none; max-width: 70ch; }
+.office-panel.is-active { display: block; }
+.office-panel strong { color: #fff; display: block; margin-bottom: 6px; }
+.office-panel p { color: rgba(255,255,255,0.7); margin-bottom: 12px; }
+.office-panel__actions { display: flex; gap: 24px; flex-wrap: wrap; }
+.office-panel__actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+.office-panel__actions a svg { color: var(--accent); }
+.office-panel__actions a:hover { color: var(--accent); opacity: 1; }
+
 .footer__meta { padding-top: 28px; display: grid; gap: 18px; }
 .footer__distributor { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .footer__distributor .distributor-badge { border-left: 0; padding-left: 0; }

@@ -175,6 +175,62 @@ function cartDrawer() {
 </div>`;
 }
 
+const OFFICES = [
+  {
+    city: "Chennai",
+    label: "Corporate Office",
+    address: "No.91, Sundar Nagar 4th Avenue, Nandambakkam, Chennai – 600032, Tamil Nadu, India",
+    phoneDisplay: "+91 44 2233 1061 / 1062 / 1063",
+    phoneTel: "+914422331061",
+  },
+  {
+    city: "Mumbai",
+    label: "Regional Office",
+    address: "The Summit Business Bay (Omkar), Office No. 606, 6th Floor, Andheri Kurla Road, Chakala, Andheri East, Mumbai – 400093",
+    phoneDisplay: "+91 22 4970 0628",
+    phoneTel: "+912249700628",
+  },
+  {
+    city: "Delhi",
+    label: "Regional Office",
+    address: "Avana Medical Devices Pvt Ltd, B6, Qutab Institutional Area, New Delhi, Delhi – 110016",
+    phoneDisplay: "+91 11 4153 8222",
+    phoneTel: "+911141538222",
+  },
+  {
+    city: "Bengaluru",
+    label: "Regional Office",
+    address: "No.52, 3rd Floor, Agastya Arcade, 80 Feet Road, New BEL Rd, Devasandra Layout, Bengaluru – 560094, Karnataka, India",
+    phoneDisplay: "+91 80 2351 2259",
+    phoneTel: "+918023512259",
+  },
+];
+
+function officesBlock() {
+  const tabs = OFFICES.map(
+    (o, i) => `<button class="office-tab${i === 0 ? " is-active" : ""}" data-office="${i}">${o.city}</button>`
+  ).join("\n        ");
+  const panels = OFFICES.map(
+    (o, i) => `<div class="office-panel${i === 0 ? " is-active" : ""}" data-office-panel="${i}">
+          <strong>${o.label} – ${o.city}</strong>
+          <p>${o.address}</p>
+          <div class="office-panel__actions">
+            <a href="tel:${o.phoneTel}">${ICONS.phone} ${o.phoneDisplay}</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(o.address)}" target="_blank" rel="noopener">${ICONS.pin} Locate us</a>
+          </div>
+        </div>`
+  ).join("\n        ");
+  return `<div class="footer__offices">
+      <h4>Our offices</h4>
+      <div class="office-tabs" role="tablist" aria-label="Office locations">
+        ${tabs}
+      </div>
+      <div class="office-panels">
+        ${panels}
+      </div>
+    </div>`;
+}
+
 function footer() {
   const col = (title, links) => `<div>
       <h4>${title}</h4>
@@ -184,7 +240,7 @@ function footer() {
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        ${echiLogo("#ffffff")}
+        <a href="about.html" title="Avana Surgical Systems"><img class="footer__brand-logo" src="assets/img/avana-logo-light.webp" alt="Avana Surgical Systems" width="2000" height="742" loading="lazy"></a>
         <p style="max-width:34ch">e.CHI by Veya Frequencies, Austria/Germany.<br>Imported and distributed in India by Avana Surgical Systems Pvt Ltd, Chennai.</p>
         <div class="social-links" aria-label="Social media">
           <!-- PLACEHOLDER: link to e.CHI India social profiles when live -->
@@ -197,12 +253,8 @@ function footer() {
       ${col("Service", [["Contact", "contact.html"], ["FAQ", "faq.html"], ["Shipping", "shipping-policy.html"], ["Returns & Refunds", "returns-refunds.html"]])}
       ${col("Partner", [["Become a partner", "become-a-partner.html"]])}
     </div>
+    ${officesBlock()}
     <div class="footer__meta">
-      <div class="footer__distributor">
-        <a class="distributor-badge distributor-badge--footer" href="about.html">
-          <span class="distributor-badge__img"><img src="assets/img/avana-logo-light.webp" alt="Avana Surgical Systems" width="2000" height="742" loading="lazy"></span>
-        </a>
-      </div>
       <p class="footer__disclaimer">
         e.CHI frequency chips are energetic wellness products, not medical products, unless a specific chip is expressly
         registered as a medical device in India. They are not a

@@ -110,6 +110,17 @@
     });
   });
 
+  /* ----------------------------------------------------------- office tabs */
+  $$(".office-tab").forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var idx = tab.getAttribute("data-office");
+      $$(".office-tab").forEach(function (t) { t.classList.toggle("is-active", t === tab); });
+      $$(".office-panel").forEach(function (p) {
+        p.classList.toggle("is-active", p.getAttribute("data-office-panel") === idx);
+      });
+    });
+  });
+
   /* ------------------------------------------------------------- back to top */
   var btt = $("#back-to-top");
   if (btt) {
