@@ -18,7 +18,7 @@ function collectionMain() {
     <div class="product-grid">
       ${products.map((p) => productCard(p)).join("\n      ")}
     </div>
-    <p class="form-note" style="margin-top:28px">All prices in ₹ incl. GST. <span class="badge-pending">Prices are placeholders pending final India MRP</span></p>
+    <p class="form-note" style="margin-top:28px">All prices in ₹ incl. GST.</p>
   </div>
 </section>`;
 }
