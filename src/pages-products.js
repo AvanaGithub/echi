@@ -69,13 +69,14 @@ function pdpMain(p) {
     <div class="pdp">
       <div class="pdp__gallery">
         <div class="pdp__hero-img ph-box">
-          <!-- PLACEHOLDER: main product image from Veya -->
-          <div class="ph ph--product"><span class="chip-illustration"><span>${p.name}</span></span><span class="ph__label">Placeholder · product image (Veya)</span></div>
+          ${p.images
+            ? `<img class="pc-img" src="${p.images.main}" alt="e.CHI ${p.name} frequency chip" width="900" height="900">`
+            : `<div class="ph ph--product"><span class="chip-illustration"><span>${p.name}</span></span><span class="ph__label">Placeholder · product image (Veya)</span></div>`}
         </div>
         <div class="pdp__thumbs">
-          <div class="ph-box ph--product-alt"><div class="ph"><span class="ph__label">Application</span></div></div>
-          <div class="ph-box ph--lifestyle"><div class="ph"><span class="ph__label">Lifestyle</span></div></div>
-          <div class="ph-box ph--chip"><div class="ph"><span class="ph__label">Packaging</span></div></div>
+          ${p.images
+            ? `<div class="ph-box"><img class="pc-img" src="${p.images.alt}" alt="e.CHI ${p.name} — application" width="900" height="900" loading="lazy"></div>`
+            : `<div class="ph-box ph--product-alt"><div class="ph"><span class="ph__label">Application</span></div></div>`}
         </div>
       </div>
       <div>

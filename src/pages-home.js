@@ -19,9 +19,11 @@ function productCard(p) {
     ${p.flag ? `<span class="product-card__flag">${p.flag}</span>` : ""}
     <a href="product-${p.slug}.html" aria-label="${p.name}">
       <div class="product-card__media ph-box">
-        <!-- PLACEHOLDER: product shot + application/lifestyle shot from Veya (hover swap) -->
-        <div class="ph ph--product ph--main"><span class="chip-illustration"><span>${p.name}</span></span><span class="ph__label">Placeholder · product image (Veya)</span></div>
-        <div class="ph ph--product-alt ph--alt"><span class="ph__label">Placeholder · application image (Veya)</span></div>
+        ${p.images
+          ? `<img class="pc-img pc-img--main" src="${p.images.main}" alt="e.CHI ${p.name} frequency chip" width="900" height="900" loading="lazy">
+        <img class="pc-img pc-img--alt" src="${p.images.alt}" alt="" aria-hidden="true" width="900" height="900" loading="lazy">`
+          : `<div class="ph ph--product ph--main"><span class="chip-illustration"><span>${p.name}</span></span><span class="ph__label">Placeholder · product image (Veya)</span></div>
+        <div class="ph ph--product-alt ph--alt"><span class="ph__label">Placeholder · application image (Veya)</span></div>`}
       </div>
     </a>
     <div class="product-card__eyebrow">${p.eyebrow}</div>

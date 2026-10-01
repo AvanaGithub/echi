@@ -5,6 +5,7 @@
 const products = [
   {
     slug: "knee-osteoarthritis",
+    images: { main: "assets/img/products/knee-product.jpg", alt: "assets/img/products/knee-application.jpg" },
     name: "Knee Osteoarthritis",
     eyebrow: "e.CHI Frequency Chips",
     flag: "Medical device*",
@@ -22,6 +23,7 @@ const products = [
   },
   {
     slug: "painfriend",
+    images: { main: "assets/img/products/painfriend-product.png", alt: "assets/img/products/painfriend-application.jpg" },
     name: "PainFriend",
     eyebrow: "e.CHI Frequency Chips",
     price: 9999, // PLACEHOLDER (EU price €99) — confirm INR MRP
@@ -34,6 +36,7 @@ const products = [
   },
   {
     slug: "inflammationfriend",
+    images: { main: "assets/img/products/inflammationfriend-product.png", alt: "assets/img/products/inflammationfriend-application.jpg" },
     name: "InflammationFriend",
     eyebrow: "e.CHI Frequency Chips",
     price: 9999, // PLACEHOLDER — confirm INR MRP
@@ -46,6 +49,7 @@ const products = [
   },
   {
     slug: "backfriend",
+    images: { main: "assets/img/products/backfriend-product.png", alt: "assets/img/products/backfriend-application.jpg" },
     name: "BackFriend",
     eyebrow: "e.CHI Frequency Chips",
     price: 9999, // PLACEHOLDER — confirm INR MRP

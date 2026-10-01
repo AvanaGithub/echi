@@ -367,6 +367,18 @@ img.header__avana-light { display: none; }
 .product-card__media .ph--alt { opacity: 0; }
 .product-card:hover .ph--main { opacity: 0; }
 .product-card:hover .ph--alt { opacity: 1; }
+.pc-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.45s ease;
+}
+.pc-img--alt { opacity: 0; }
+.product-card:hover .pc-img--main { opacity: 0; }
+.product-card:hover .pc-img--alt { opacity: 1; }
+.pdp__thumbs .ph-box { aspect-ratio: 1; border-radius: var(--radius-img); position: relative; overflow: hidden; }
 .product-card__flag {
   position: absolute;
   top: 14px; left: 14px;
