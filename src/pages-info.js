@@ -14,9 +14,8 @@ function functionMain() {
 
 <section class="section">
   <div class="container split">
-    <div class="split__media split__media--wide ph-box ph--wave">
-      <!-- PLACEHOLDER: frequency/wave visual from Veya -->
-      <div class="ph"><span class="ph__label">Placeholder · frequency visual (Veya)</span></div>
+    <div class="split__media split__media--wide ph-box">
+      <img class="cover-img" src="assets/img/function/wave-1.jpg" alt="Natural frequency waves" width="1024" height="683" loading="lazy">
     </div>
     <div>
       <span class="eyebrow">Step 1 — The science</span>
@@ -29,21 +28,51 @@ function functionMain() {
 <section class="section section--mist">
   <div class="container split split--reverse">
     <div>
-      <span class="eyebrow">Step 2 — The chip</span>
+      <span class="eyebrow">Step 2 — Inside the chip</span>
       <h2 class="display display--sm">Stored on a chip,<br><strong>using a patented process</strong></h2>
-      <p class="lede">The digitised frequency information is stored on a carrier material inside each e.CHI chip using a patented process. The chip needs no battery and no electronics — it simply carries the information, quietly, for up to nine months.</p>
+      <p class="lede">The digitised frequency information is stored inside each e.CHI chip using a patented process — no battery, no electronics, quietly active for up to nine months. Four elements make that possible:</p>
+      <ul class="usp-inline">
+        <li>${ICONS.check}<span><strong>Skin-friendly silicone shell</strong> — biocompatible and comfortable for days of continuous wear</span></li>
+        <li>${ICONS.check}<span><strong>Mineral core</strong> — high-quality minerals that hold the frequency information and release it gradually</span></li>
+        <li>${ICONS.check}<span><strong>Magnetic core</strong> — a weak permanent magnet keeps the stored patterns stable and protected</span></li>
+        <li>${ICONS.check}<span><strong>Frequency imprinting</strong> — a precision generator writes the patterns onto the chip, where they stay active for months</span></li>
+      </ul>
     </div>
-    <div class="split__media split__media--wide ph-box ph--chip">
-      <div class="chip-illustration"><span>e.CHI</span></div>
-      <div class="ph"><span class="ph__label">Placeholder · chip macro shot (Veya)</span></div>
+    <div class="split__media split__media--wide ph-box" style="background:#fff">
+      <img class="cover-img" style="object-fit:contain" src="assets/img/function/chip-anatomy.jpg" alt="e.CHI frequency chip construction" width="1024" height="768" loading="lazy">
     </div>
   </div>
 </section>
 
 <section class="section">
+  <div class="container">
+    <span class="eyebrow">From nature to your body</span>
+    <h2 class="display display--sm">How it works,<br><strong>in four steps</strong></h2>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <div class="hiw-card__media"><img src="assets/img/function/step-1.png" alt="Analysing and digitising natural frequencies" loading="lazy"></div>
+        <p>Decades of research decode and digitise the natural frequencies found in nature.</p>
+      </div>
+      <div class="hiw-card">
+        <div class="hiw-card__media"><img src="assets/img/function/step-2.png" alt="Transferring frequencies to the chip" loading="lazy"></div>
+        <p>The frequency patterns are transferred onto the e.CHI chip in a patented process.</p>
+      </div>
+      <div class="hiw-card">
+        <div class="hiw-card__media"><img src="assets/img/function/step-3.png" alt="Mineral carrier in skin-friendly silicone" loading="lazy"></div>
+        <p>High-quality minerals embedded in skin-friendly silicone act as the carrier material.</p>
+      </div>
+      <div class="hiw-card">
+        <div class="hiw-card__media"><img src="assets/img/function/step-4.png" alt="Chip applied to the body like a plaster" loading="lazy"></div>
+        <p>Worn like a plaster on the affected area, the chip targets the body's bioelectrical field.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--mist">
   <div class="container split">
-    <div class="split__media split__media--wide ph-box ph--lifestyle">
-      <div class="ph"><span class="ph__label">Placeholder · application image (Veya)</span></div>
+    <div class="split__media split__media--wide ph-box">
+      <img class="cover-img" src="assets/img/products/painfriend-application.jpg" alt="e.CHI chip applied to the body" width="900" height="900" loading="lazy">
     </div>
     <div>
       <span class="eyebrow">Step 3 — The application</span>
@@ -59,7 +88,7 @@ function functionMain() {
   </div>
 </section>
 
-${explainerSection("section--mist")}
+${explainerSection()}
 
 <section class="section section--ink">
   <div class="container" style="max-width:880px;text-align:center">

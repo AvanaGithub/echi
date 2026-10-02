@@ -772,6 +772,51 @@ img.header__avana-light { display: none; }
   text-align: center;
 }
 
+/* --------------------------------------------------------- cover images */
+.cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------------------------------- how-it-works steps */
+.hiw-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2.4vw, 28px);
+  margin-top: clamp(28px, 4vw, 44px);
+  counter-reset: hiw;
+}
+.hiw-card { position: relative; }
+.hiw-card__media {
+  border-radius: var(--radius-img);
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: var(--mist);
+  margin-bottom: 14px;
+}
+.hiw-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hiw-card p { color: var(--ink-soft); font-size: 15px; margin: 0; }
+.hiw-card::before {
+  counter-increment: hiw;
+  content: counter(hiw);
+  position: absolute;
+  top: 10px; left: 10px;
+  z-index: 2;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 860px) { .hiw-grid { grid-template-columns: 1fr 1fr; } }
+
 /* --------------------------------------------------------- explainer video */
 .video-frame {
   position: relative;
