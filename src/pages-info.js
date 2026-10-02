@@ -100,8 +100,8 @@ ${explainerSection()}
 }
 
 function storiesMain() {
-  const card = (title, role, label) => `<article class="story-card">
-      <div class="story-card__media ph-box ph--portrait"><div class="ph"><span class="ph__label">${label}</span></div></div>
+  const card = (title, role) => `<article class="story-card">
+      <div class="story-card__media ph-box ph--portrait"></div>
       <h3 class="story-card__name">${title}</h3>
       <p class="story-card__role">${role}</p>
     </article>`;
@@ -122,9 +122,9 @@ function storiesMain() {
     <h2 class="display display--sm">Stories from India —<br><strong>coming soon</strong></h2>
     <p class="lede">We are collecting experiences from Indian athletes, physiotherapists, clinicians and everyday users. Their stories will appear here soon.</p>
     <div class="story-grid" style="margin-top:36px">
-      ${card("Athlete story", "Olympic & world-champion stories — pending India licence from Veya", "Placeholder · athlete image (pending licence)")}
-      ${card("Physiotherapist story", "Voices from Indian sports physiotherapy — coming soon", "Placeholder · image")}
-      ${card("Customer story", "Everyday experiences from across India — coming soon", "Placeholder · image")}
+      ${card("Athlete story", "Olympic & world-champion stories — coming soon")}
+      ${card("Physiotherapist story", "Voices from Indian sports physiotherapy — coming soon")}
+      ${card("Customer story", "Everyday experiences from across India — coming soon")}
     </div>
   </div>
 </section>
