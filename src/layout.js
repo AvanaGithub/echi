@@ -175,6 +175,25 @@ function cartDrawer() {
 </div>`;
 }
 
+/* Explainer video section — shared by the homepage and Function page */
+function explainerSection(extraClass = "") {
+  return `<section class="section video-section${extraClass ? " " + extraClass : ""}">
+  <div class="container" style="max-width:980px;text-align:center">
+    <span class="eyebrow">How it works</span>
+    <h2 class="display display--md">Frequency therapy,<br><strong>explained in minutes</strong></h2>
+    <p class="lede" style="margin-inline:auto">Watch how e.CHI frequency chips are designed to support your body's own regulation — no devices, no cables, no chemical agents.</p>
+    <div class="video-frame">
+      <video preload="metadata" playsinline>
+        <source src="assets/video/explainer-english.mp4" type="video/mp4">
+      </video>
+      <button class="video-frame__play" aria-label="Play explainer video">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>`;
+}
+
 const OFFICES = [
   {
     city: "Chennai",
@@ -287,4 +306,4 @@ ${main}
 ${footer()}`;
 }
 
-module.exports = { SITE, ICONS, NAV, echiLogo, head, header, footer, page, organizationSchema, announcementBar };
+module.exports = { SITE, ICONS, NAV, echiLogo, head, header, footer, page, organizationSchema, announcementBar, explainerSection };

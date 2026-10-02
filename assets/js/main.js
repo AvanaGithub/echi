@@ -110,6 +110,18 @@
     });
   });
 
+  /* -------------------------------------------------------- explainer video */
+  $$(".video-frame__play").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var frame = btn.closest(".video-frame");
+      var video = frame.querySelector("video");
+      frame.classList.add("is-playing");
+      video.controls = true;
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  });
+
   /* ----------------------------------------------------------- office tabs */
   $$(".office-tab").forEach(function (tab) {
     tab.addEventListener("click", function () {

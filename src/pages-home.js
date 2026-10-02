@@ -1,6 +1,6 @@
 /* Homepage */
 "use strict";
-const { ICONS, SITE } = require("./layout");
+const { ICONS, SITE, explainerSection } = require("./layout");
 const { products, homeGrid, formatINR } = require("./products");
 
 const USPS = ["Easy to use", "Active for up to 9 months", "No chemical agents", "Scientifically researched"];
@@ -158,6 +158,9 @@ ${uspStrip()}
     </div>
   </div>
 </section>
+
+<!-- ============================== EXPLAINER VIDEO ============================== -->
+${explainerSection()}
 
 <!-- ============================== SCIENCE ============================== -->
 <section class="section section--ink">

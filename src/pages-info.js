@@ -1,6 +1,6 @@
 /* Function / How it works, Stories, About Us */
 "use strict";
-const { ICONS, SITE } = require("./layout");
+const { ICONS, SITE, explainerSection } = require("./layout");
 
 function functionMain() {
   return `
@@ -58,6 +58,8 @@ function functionMain() {
     </div>
   </div>
 </section>
+
+${explainerSection("section--mist")}
 
 <section class="section section--ink">
   <div class="container" style="max-width:880px;text-align:center">
