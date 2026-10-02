@@ -9,7 +9,7 @@ const { products } = require("./src/products");
 const { homeMain, faqSchema, FAQ_HOME } = require("./src/pages-home");
 const { collectionMain, pdpMain, productSchema } = require("./src/pages-products");
 const { functionMain, storiesMain, aboutMain } = require("./src/pages-info");
-const { contactMain, faqMain, partnerMain, FAQ_EXTRA } = require("./src/pages-contact");
+const { contactMain, faqMain, partnerMain } = require("./src/pages-contact");
 const { shippingMain, returnsMain } = require("./src/pages-legal");
 
 const OUT = __dirname;
@@ -73,10 +73,10 @@ const pages = [
   },
   {
     path: "faq.html",
-    title: "FAQ — e.CHI Frequency Chips India | Wearing, Ordering, Delivery",
+    title: "FAQ — e.CHI Frequency Chips India | How to Wear & Use",
     description:
-      "Answers on wearing e.CHI frequency chips, how long they last, contraindications, plus India delivery, payments, GST invoices and returns.",
-    schema: [org, faqSchema([...FAQ_HOME, ...FAQ_EXTRA])],
+      "Answers on wearing e.CHI frequency chips: where to attach them, how long they last, showering and sport, sensitive skin, and contraindications.",
+    schema: [org, faqSchema(FAQ_HOME)],
     main: faqMain(),
   },
   {

@@ -74,8 +74,6 @@ function faqMain() {
   <div class="container" style="max-width:900px">
     <h2 class="display display--sm" style="margin-bottom:22px">Using <strong>e.CHI</strong></h2>
     ${faqAccordion(FAQ_HOME)}
-    <h2 class="display display--sm" style="margin:56px 0 22px">Ordering <strong>in India</strong></h2>
-    ${faqAccordion(FAQ_EXTRA)}
   </div>
 </section>`;
 }
