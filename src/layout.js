@@ -183,7 +183,7 @@ function explainerSection(extraClass = "") {
     <h2 class="display display--md">Frequency therapy,<br><strong>explained in minutes</strong></h2>
     <p class="lede" style="margin-inline:auto">Watch how e.CHI frequency chips are designed to support your body's own regulation — no devices, no cables, no chemical agents.</p>
     <div class="video-frame">
-      <video preload="metadata" playsinline>
+      <video preload="metadata" playsinline poster="assets/video/explainer-english.jpg">
         <source src="assets/video/explainer-english.mp4" type="video/mp4">
       </video>
       <button class="video-frame__play" aria-label="Play explainer video">

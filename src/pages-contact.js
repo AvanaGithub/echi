@@ -45,16 +45,14 @@ function contactMain() {
     </div>
     <div>
       <ul class="contact-list" style="margin-bottom:26px">
-        <li>${ICONS.pin}<span><strong>Avana Surgical Systems Pvt Ltd</strong><br>No.91, Sundar Nagar 4th Avenue,<br>Nandambakkam, Chennai,<br>Tamil Nadu &ndash; 600 032, India</span></li>
+        <li>${ICONS.pin}<span><strong>Avana Medical Devices Pvt Ltd</strong><br>No.91, Sundar Nagar 4th Avenue,<br>Nandambakkam, Chennai,<br>Tamil Nadu &ndash; 600 032, India</span></li>
         <li>${ICONS.phone}<span><a href="tel:04422331061">044-2233 1061</a> / <a href="tel:04422331062">1062</a> / <a href="tel:04422331063">1063</a></span></li>
         <li>${ICONS.mail}<span><a class="text-link" href="mailto:${SITE.email}">${SITE.email}</a></span></li>
         <li>${ICONS.whatsapp.replace('width="28" height="28"', 'width="18" height="18"')}<span><a class="text-link" href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener">Chat on WhatsApp</a></span></li>
         <li>${ICONS.clock}<span>Monday – Saturday, 9:30 AM – 6:30 PM IST</span></li>
       </ul>
-      <div class="split__media split__media--wide ph-box ph--map">
-        <!-- PLACEHOLDER: replace with Google Maps embed iframe for the Avana Chennai office, e.g.
-             <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Avana Surgical Systems, Chennai"></iframe> -->
-        <div class="ph"><span class="ph__label">Placeholder · Google Map embed (Avana Chennai office)</span></div>
+      <div class="map-frame" style="margin-top:0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.0497537209194!2d80.19612167358984!3d13.014845513931725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267c5385ce16b%3A0x4f409925c8bc2992!2sAVANA%20Medical%20Devices%20Pvt%20Ltd%2C!5e1!3m2!1sen!2sin!4v1790932029511!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Avana Medical Devices Pvt Ltd, Chennai"></iframe>
       </div>
     </div>
   </div>

@@ -30,7 +30,7 @@ function productCard(p) {
     <h3 class="product-card__name"><a href="product-${p.slug}.html">${p.name}</a></h3>
     <div class="product-card__price">${formatINR(p.price)} <small>incl. GST</small></div>
     <div class="product-card__quick">
-      <a class="btn" href="product-${p.slug}.html">Learn more</a>
+      <a class="btn" href="function.html">Learn more</a>
     </div>
   </article>`;
 }
@@ -128,28 +128,28 @@ ${uspStrip()}
     <a class="text-link" href="function.html">Learn more</a>
     <div class="feature-grid">
       <article class="feature-card">
-        <div class="feature-card__media ph-box"><div class="ph ph--science"><span class="ph__label">Placeholder · image (Veya)</span></div></div>
+        <div class="feature-card__media"><img src="assets/img/function/wave-2.jpg" alt="Frequency waves" width="1024" height="683" loading="lazy"></div>
         <div class="feature-card__body">
           <h3>Biophysical innovation</h3>
           <p>Advanced frequency algorithms support the body's own processes at the cellular level — gently, naturally and without any technical device.</p>
         </div>
       </article>
       <article class="feature-card">
-        <div class="feature-card__media ph-box"><div class="ph ph--lifestyle"><span class="ph__label">Placeholder · image (Veya)</span></div></div>
+        <div class="feature-card__media"><img src="assets/img/products/knee-application.jpg" alt="e.CHI chip worn on the knee" width="900" height="900" loading="lazy"></div>
         <div class="feature-card__body">
           <h3>Natural companions in everyday life</h3>
           <p>e.CHI frequency chips are applied to the affected area like a patch. From there they activate the body's bioelectrical field — no battery, no device, and active for up to nine months.</p>
         </div>
       </article>
       <article class="feature-card">
-        <div class="feature-card__media ph-box"><div class="ph ph--chip"><span class="chip-illustration"><span>e.CHI</span></span><span class="ph__label">Placeholder · image (Veya)</span></div></div>
+        <div class="feature-card__media"><img src="assets/img/products/painfriend-product.png" alt="e.CHI frequency chip in skin-friendly silicone" width="900" height="900" loading="lazy"></div>
         <div class="feature-card__body">
           <h3>No side effects</h3>
           <p>e.CHI frequency chips are made of skin-friendly silicone and contain no chemical agents whatsoever.</p>
         </div>
       </article>
       <article class="feature-card">
-        <div class="feature-card__media ph-box"><div class="ph ph--wave"><span class="ph__label">Placeholder · image (Veya)</span></div></div>
+        <div class="feature-card__media"><img src="assets/img/function/step-1.png" alt="Scientific frequency research" width="900" height="900" loading="lazy"></div>
         <div class="feature-card__body">
           <h3>Scientifically researched</h3>
           <p>e.CHI frequency technology builds on more than 30 years of biophysical research and is continuously tested in cell-biological studies.</p>
@@ -171,45 +171,20 @@ ${explainerSection()}
       <p class="lede">Over three decades of research have produced highly precise methods for analysing and digitising natural frequencies and storing them on carrier materials using a patented process. This know-how is the foundation of e.CHI technology today.</p>
       <a class="btn" href="function.html">Learn more</a>
     </div>
-    <div class="split__media ph-box ph--science">
-      <!-- PLACEHOLDER: laboratory / research imagery from Veya -->
-      <div class="ph"><span class="ph__label">Placeholder · research image (Veya)</span></div>
+    <div class="split__media ph-box">
+      <video class="cover-img ambient-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/echi-chip.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/video/echi-chip.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
 
 <!-- ============================== STORIES ============================== -->
 <section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2 class="display display--md">The original from<br><strong>top-level sports</strong></h2>
-        <p class="lede">The patented e.CHI frequency chips were originally developed for elite sport, where Olympic and world champions have relied on this technology for years.</p>
-      </div>
-      <a class="btn btn--ghost" href="stories.html">All stories</a>
-    </div>
-    <!-- NOTE: Athlete names/images require a licence from Veya for India use.
-         Until confirmed, this section shows placeholder story cards. -->
-    <div class="story-grid">
-      <article class="story-card">
-        <div class="story-card__media ph-box ph--portrait"><div class="ph"><span class="ph__label">Placeholder · athlete image (pending licence)</span></div></div>
-        <h3 class="story-card__name">Stories from India</h3>
-        <p class="story-card__role">Olympic & world-champion athlete stories — coming soon</p>
-        <a class="text-link" href="stories.html">Learn more</a>
-      </article>
-      <article class="story-card">
-        <div class="story-card__media ph-box ph--portrait"><div class="ph"><span class="ph__label">Placeholder · athlete image (pending licence)</span></div></div>
-        <h3 class="story-card__name">Stories from India</h3>
-        <p class="story-card__role">Indian sports & physiotherapy stories — coming soon</p>
-        <a class="text-link" href="stories.html">Learn more</a>
-      </article>
-      <article class="story-card">
-        <div class="story-card__media ph-box ph--portrait"><div class="ph"><span class="ph__label">Placeholder · athlete image (pending licence)</span></div></div>
-        <h3 class="story-card__name">Stories from India</h3>
-        <p class="story-card__role">Customer experiences from across India — coming soon</p>
-        <a class="text-link" href="stories.html">Learn more</a>
-      </article>
-    </div>
+  <div class="container" style="max-width:820px;text-align:center">
+    <h2 class="display display--md">Stories from India —<br><strong>coming soon</strong></h2>
+    <p class="lede" style="margin-inline:auto">We are collecting experiences from Indian athletes, physiotherapists, clinicians and everyday users. Their stories will appear here soon.</p>
+    <a class="btn btn--ghost" href="stories.html">Visit the Stories page</a>
   </div>
 </section>
 

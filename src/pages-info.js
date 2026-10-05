@@ -100,32 +100,12 @@ ${explainerSection()}
 }
 
 function storiesMain() {
-  const card = (title, role) => `<article class="story-card">
-      <div class="story-card__media ph-box ph--portrait"></div>
-      <h3 class="story-card__name">${title}</h3>
-      <p class="story-card__role">${role}</p>
-    </article>`;
   return `
 <section class="page-hero page-hero--mist">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Stories</p>
-    <h1 class="display display--md">The original from<br><strong>top-level sports</strong></h1>
-    <p class="lede">The patented e.CHI frequency chips were originally developed for elite sport. For years, Olympic and world champions in Europe have used this technology as part of their recovery and preparation.</p>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <!-- NOTE: European athlete names, portraits and testimonials require a licence
-         from Veya Frequencies for use in India. Once granted, replace these
-         placeholder cards with the original athlete stories (Tobias Wendl,
-         Tanja Frieden, Franz Klammer et al.). -->
-    <h2 class="display display--sm">Stories from India —<br><strong>coming soon</strong></h2>
+    <h1 class="display display--md">Stories from India —<br><strong>coming soon</strong></h1>
     <p class="lede">We are collecting experiences from Indian athletes, physiotherapists, clinicians and everyday users. Their stories will appear here soon.</p>
-    <div class="story-grid" style="margin-top:36px">
-      ${card("Athlete story", "Olympic & world-champion stories — coming soon")}
-      ${card("Physiotherapist story", "Voices from Indian sports physiotherapy — coming soon")}
-      ${card("Customer story", "Everyday experiences from across India — coming soon")}
-    </div>
   </div>
 </section>
 <section class="section section--mist">
@@ -156,8 +136,8 @@ function aboutMain() {
       <p class="lede">Their work produced highly precise methods for analysing and digitising natural frequencies and storing them on carrier materials in a patented process. Originally developed for elite sport, this technology has supported Olympic and world champions for years — and is now available for everyday life.</p>
       <p class="lede">Every e.CHI chip is developed and manufactured in Europe and continuously tested in cell-biological studies.</p>
     </div>
-    <div class="split__media ph-box ph--science">
-      <div class="ph"><span class="ph__label">Placeholder · Veya research image</span></div>
+    <div class="split__media ph-box">
+      <img class="cover-img" src="assets/img/function/wave-1.jpg" alt="Frequency research visual" width="1024" height="683" loading="lazy">
     </div>
   </div>
 </section>
@@ -165,8 +145,10 @@ function aboutMain() {
 <!-- ============ B) Avana ============ -->
 <section class="section section--mist">
   <div class="container split split--reverse">
-    <div class="split__media ph-box ph--lifestyle">
-      <div class="ph"><span class="ph__label">Placeholder · Avana team / Chennai office photo</span></div>
+    <div class="split__media brand-tile">
+      <!-- Replace with an Avana team / Chennai office photo when available -->
+      <img src="assets/img/avana-logo-light.webp" alt="Avana Medical Devices Pvt Ltd" width="2000" height="742" loading="lazy">
+      <span class="brand-tile__caption">Chennai · Mumbai · Delhi · Bengaluru</span>
     </div>
     <div>
       <span class="eyebrow">Your e.CHI partner in India</span>
@@ -189,6 +171,17 @@ function aboutMain() {
     <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px">
       <a class="btn" href="contact.html">Talk to our team</a>
       <a class="btn btn--ghost" href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Visit us ============ -->
+<section class="section section--mist">
+  <div class="container" style="max-width:900px">
+    <h2 class="display display--sm">Visit <strong>Avana Medical Devices Pvt Ltd</strong></h2>
+    <p class="lede">No.91, Sundar Nagar 4th Ave, Sundar Nagar, Gandhi Nagar, Nandambakkam, St.Thomas Mount, Tamil Nadu 600032</p>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.0497537209194!2d80.19612167358984!3d13.014845513931725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267c5385ce16b%3A0x4f409925c8bc2992!2sAVANA%20Medical%20Devices%20Pvt%20Ltd%2C!5e1!3m2!1sen!2sin!4v1790932029511!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Avana Medical Devices Pvt Ltd, Chennai"></iframe>
     </div>
   </div>
 </section>`;

@@ -47,27 +47,27 @@ const pages = [
   {
     path: "stories.html",
     current: "stories.html",
-    title: "Stories — From Elite Sport to Everyday India | e.CHI India",
+    title: "Stories from India | e.CHI India",
     description:
-      "e.CHI frequency chips were born in elite sport and trusted by Olympic champions. Stories from Indian athletes, physiotherapists and customers — coming soon.",
+      "Experiences with e.CHI frequency chips from Indian athletes, physiotherapists, clinicians and everyday users — coming soon. Share your own e.CHI story with us.",
     schema: [org],
     main: storiesMain(),
   },
   {
     path: "about.html",
     current: "about.html",
-    title: "About e.CHI & Avana Surgical Systems — Your Partner in India",
+    title: "About e.CHI & Avana Medical Devices — Your Partner in India",
     description:
-      "e.CHI by Veya Frequencies: 30+ years of biophysical research from Austria, Germany and Switzerland. Distributed in India by Avana Surgical Systems, Chennai — transforming healthcare through technology.",
+      "e.CHI by Veya Frequencies: 30+ years of biophysical research from Austria, Germany and Switzerland. Distributed in India by Avana Medical Devices Pvt Ltd, Chennai — transforming healthcare through technology.",
     schema: [org],
     main: aboutMain(),
   },
   {
     path: "contact.html",
     current: "contact.html",
-    title: "Contact e.CHI India — Avana Surgical Systems, Chennai",
+    title: "Contact e.CHI India — Avana Medical Devices, Chennai",
     description:
-      "Questions about e.CHI frequency chips or your order? Contact Avana Surgical Systems in Chennai — phone, email, WhatsApp and enquiry form. Mon–Sat, 9:30 AM–6:30 PM IST.",
+      "Questions about e.CHI frequency chips? Contact Avana Medical Devices Pvt Ltd in Chennai — phone, email, WhatsApp and enquiry form. Mon–Sat, 9:30 AM–6:30 PM IST.",
     schema: [org],
     main: contactMain(),
   },

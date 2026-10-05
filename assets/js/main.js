@@ -54,7 +54,7 @@
 
   /* ------------------------------------------------------------- hero videos */
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  $$(".hero__video").forEach(function (video) {
+  $$(".hero__video, .ambient-video").forEach(function (video) {
     var source = video.querySelector("source");
     if (source) {
       source.addEventListener("error", function () { video.remove(); }); // file missing -> gradient fallback
@@ -115,10 +115,18 @@
     btn.addEventListener("click", function () {
       var frame = btn.closest(".video-frame");
       var video = frame.querySelector("video");
+      /* pause any other story/explainer video that is playing */
+      $$(".video-frame video").forEach(function (v) { if (v !== video) v.pause(); });
       frame.classList.add("is-playing");
       video.controls = true;
       var p = video.play();
       if (p && p.catch) p.catch(function () {});
+    });
+  });
+  /* also enforce one-at-a-time when resuming via native controls */
+  $$(".video-frame video").forEach(function (v) {
+    v.addEventListener("play", function () {
+      $$(".video-frame video").forEach(function (other) { if (other !== v) other.pause(); });
     });
   });
 
