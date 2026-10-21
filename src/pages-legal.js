@@ -60,7 +60,7 @@ function termsMain() {
   return wrap("Terms", "Terms of<br><strong>service</strong>", `
     <p><em>Last updated: 22/09/2026</em></p>
     <h2>1. Who we are</h2>
-    <p>This website is operated by <strong>Avana Surgical Systems Pvt Ltd</strong>, Chennai, Tamil Nadu, India (“Avana”, “we”), the authorised Indian importer and distributor of e.CHI products manufactured by Veya Frequencies, Austria/Germany. GSTIN: ${SITE.gstin}. CIN: [CIN PLACEHOLDER].</p>
+    <p>This website is operated by <strong>Avana Medical Devices Pvt Ltd</strong>, Chennai, Tamil Nadu, India (“Avana”, “we”), the authorised Indian distributor of e.CHI products manufactured by Veya Frequencies, Austria/Germany. GSTIN: ${SITE.gstin}. CIN: [CIN PLACEHOLDER].</p>
     <h2>2. Products & claims</h2>
     <p>e.CHI frequency chips are energetic wellness products. Unless a specific product is expressly registered as a medical device in India, e.CHI products are not medical products and are not intended to diagnose, treat, cure or prevent any disease. Product descriptions reflect information provided by the manufacturer, Veya Frequencies; Avana, as distributor, makes no product-efficacy claims of its own. If you have physical complaints, consult a doctor. Do not use e.CHI chips if you have epilepsy, severe heart failure, an organ transplant or a severe mental illness.</p>
     <h2>3. Orders & prices</h2>
@@ -70,7 +70,7 @@ function termsMain() {
     <h2>5. Shipping, returns & grievances</h2>
     <p>Shipping is governed by our <a class="text-link" href="shipping-policy.html">Shipping Policy</a>, returns by our <a class="text-link" href="returns-refunds.html">Returns & Refunds Policy</a>, and complaints by our <a class="text-link" href="grievance-redressal.html">Grievance Redressal</a> process.</p>
     <h2>6. Intellectual property</h2>
-    <p>e.CHI, Veya Frequencies and related marks, images and content are the property of Veya Frequencies and are used here under authorisation. The Avana name and logo are the property of Avana Surgical Systems Pvt Ltd. No content on this site may be reproduced without permission.</p>
+    <p>e.CHI, Veya Frequencies and related marks, images and content are the property of Veya Frequencies and are used here under authorisation. The Avana name and logo are the property of Avana Medical Devices Pvt Ltd. No content on this site may be reproduced without permission.</p>
     <h2>7. Limitation of liability</h2>
     <p>To the maximum extent permitted by law, Avana's aggregate liability arising from any order is limited to the amount paid for that order. Nothing in these terms limits rights available to consumers under the Consumer Protection Act, 2019.</p>
     <h2>8. Governing law</h2>
@@ -81,7 +81,7 @@ function privacyMain() {
   return wrap("Privacy Policy", "Privacy<br><strong>policy</strong>", `
     <p><em>Last updated: 22/09/2026 · Aligned to the Digital Personal Data Protection Act, 2023 (DPDP Act)</em></p>
     <h2>1. Data fiduciary</h2>
-    <p><strong>Avana Surgical Systems Pvt Ltd</strong>, Chennai, Tamil Nadu, India is the data fiduciary for personal data collected on this website. Contact: ${SITE.email} · ${SITE.phone}.</p>
+    <p><strong>Avana Medical Devices Pvt Ltd</strong>, Chennai, Tamil Nadu, India is the data fiduciary for personal data collected on this website. Contact: ${SITE.email} · ${SITE.phone}.</p>
     <h2>2. What we collect & why</h2>
     <table>
       <tr><th>Data</th><th>Purpose</th><th>Basis</th></tr>

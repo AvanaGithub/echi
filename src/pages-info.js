@@ -162,7 +162,7 @@ function aboutMain() {
   <div class="container" style="max-width:900px">
     <h2 class="display display--sm">What Avana does for<br><strong>e.CHI customers in India</strong></h2>
     <ul class="usp-inline" style="margin-top:26px;font-size:1.05rem">
-      <li>${ICONS.check}<span><strong>Genuine imported stock</strong> — every chip comes directly from Veya Frequencies in Europe.</span></li>
+      <li>${ICONS.check}<span><strong>Genuine e.CHI stock</strong> — every chip comes directly from Veya Frequencies in Europe.</span></li>
       <li>${ICONS.check}<span><strong>Pan-India delivery</strong> — free shipping to every serviceable PIN code, with GST invoice.</span></li>
       <li>${ICONS.check}<span><strong>Customer support</strong> — responsive phone, email and WhatsApp support for every order.</span></li>
       <li>${ICONS.check}<span><strong>Clinic & dealer partnerships</strong> — we work with clinics, physiotherapists and pharmacies across the country.</span></li>
@@ -181,8 +181,14 @@ function aboutMain() {
     <h2 class="display display--sm">Visit <strong>Avana Medical Devices Pvt Ltd</strong></h2>
     <p class="lede">No.91, Sundar Nagar 4th Ave, Sundar Nagar, Gandhi Nagar, Nandambakkam, St.Thomas Mount, Tamil Nadu 600032</p>
     <div class="map-frame">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.0497537209194!2d80.19612167358984!3d13.014845513931725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267c5385ce16b%3A0x4f409925c8bc2992!2sAVANA%20Medical%20Devices%20Pvt%20Ltd%2C!5e1!3m2!1sen!2sin!4v1790932029511!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Avana Medical Devices Pvt Ltd, Chennai"></iframe>
+      <a class="map-frame__fallback" href="https://www.google.com/maps/search/?api=1&query=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032" target="_blank" rel="noopener">
+        <span class="map-frame__pin">${ICONS.pin}</span>
+        <strong>Avana Medical Devices Pvt Ltd</strong>
+      </a>
+      <iframe src="https://www.google.com/maps?q=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032&z=16&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Avana Medical Devices Pvt Ltd, Chennai"></iframe>
+      <a class="map-frame__open" href="https://www.google.com/maps/search/?api=1&query=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032" target="_blank" rel="noopener" aria-label="Open in Google Maps" title="Open in Google Maps">${ICONS.pin}</a>
     </div>
+    <p style="margin-top:16px"><a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032" target="_blank" rel="noopener">Get directions</a></p>
   </div>
 </section>`;
 }

@@ -9,7 +9,7 @@ const { products } = require("./src/products");
 const { homeMain, faqSchema, FAQ_HOME } = require("./src/pages-home");
 const { collectionMain, pdpMain, productSchema } = require("./src/pages-products");
 const { functionMain, storiesMain, aboutMain } = require("./src/pages-info");
-const { contactMain, faqMain, partnerMain } = require("./src/pages-contact");
+const { contactMain, faqMain } = require("./src/pages-contact");
 const { shippingMain, returnsMain } = require("./src/pages-legal");
 
 const OUT = __dirname;
@@ -20,7 +20,7 @@ const pages = [
     path: "index.html",
     title: "e.CHI India — Portable Frequency Therapy Chips | Official Distributor",
     description:
-      "e.CHI frequency chips, now in India. Drug-free, portable frequency therapy for knee pain, back pain and everyday wellness. Free pan-India shipping. Authorised distributor: Avana Surgical Systems, Chennai.",
+      "e.CHI frequency chips, now in India. Drug-free, portable frequency therapy for knee pain, back pain and everyday wellness. Free pan-India shipping. Authorised distributor: Avana Medical Devices, Chennai.",
     overlay: true,
     bodyClass: "has-hero",
     schema: [org, faqSchema(FAQ_HOME)],
@@ -31,7 +31,7 @@ const pages = [
     current: "products.html",
     title: "e.CHI Frequency Chips — Buy in India | Knee, Pain, Back & Inflammation",
     description:
-      "Shop the e.CHI frequency chip range in India: Knee Osteoarthritis, PainFriend, BackFriend and InflammationFriend. ₹ prices incl. GST, free shipping, genuine imported stock.",
+      "Shop the e.CHI frequency chip range in India: Knee Osteoarthritis, PainFriend, BackFriend and InflammationFriend. ₹ prices incl. GST, free shipping, genuine e.CHI stock.",
     schema: [org],
     main: collectionMain(),
   },
@@ -80,14 +80,6 @@ const pages = [
     main: faqMain(),
   },
   {
-    path: "become-a-partner.html",
-    title: "Become an e.CHI Partner in India — Clinics, Physios, Pharmacies & Dealers",
-    description:
-      "Partner with Avana Surgical Systems to offer e.CHI frequency therapy in India. Partner pricing, training, marketing support and genuine imported stock for clinics, physiotherapists, pharmacies and dealers.",
-    schema: [org],
-    main: partnerMain(),
-  },
-  {
     path: "shipping-policy.html",
     title: "Shipping Policy — Free Pan-India Delivery | e.CHI India",
     description:
@@ -99,7 +91,7 @@ const pages = [
     path: "returns-refunds.html",
     title: "Returns & Refunds Policy | e.CHI India",
     description:
-      "7-day returns on unopened e.CHI chips, free replacement for defective or damaged items, refunds in 7–10 working days. Avana Surgical Systems, Chennai.",
+      "7-day returns on unopened e.CHI chips, free replacement for defective or damaged items, refunds in 7–10 working days. Avana Medical Devices, Chennai.",
     schema: [org],
     main: returnsMain(),
   },

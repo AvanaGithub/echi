@@ -10,7 +10,7 @@ function collectionMain() {
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Products</p>
     <h1 class="display display--md">e.CHI <strong>frequency chips</strong></h1>
-    <p class="lede">Portable frequency therapy for everyday life — applied like a patch, active for up to nine months, without chemical agents. Genuine imported stock, delivered pan-India with GST invoice by Avana Surgical Systems.</p>
+    <p class="lede">Portable frequency therapy for everyday life — applied like a patch, active for up to nine months, without chemical agents. Genuine e.CHI stock, delivered pan-India with GST invoice by Avana Medical Devices.</p>
   </div>
 </section>
 <section class="section">
@@ -37,7 +37,7 @@ function productSchema(p) {
       priceCurrency: "INR",
       price: String(p.price),
       availability: "https://schema.org/PreOrder",
-      seller: { "@type": "Organization", name: "Avana Surgical Systems Pvt Ltd" },
+      seller: { "@type": "Organization", name: "Avana Medical Devices Pvt Ltd" },
     },
   };
 }
@@ -48,9 +48,9 @@ function complianceBox(p) {
     <dl>
       <dt>Product</dt><dd>e.CHI ${p.name} frequency chip</dd>
       <dt>Manufacturer</dt><dd>Veya Frequencies, [Manufacturer street address PLACEHOLDER], Austria / Germany</dd>
-      <dt>Importer & distributor</dt><dd>${SITE.address}</dd>
+      <dt>Distributor</dt><dd>${SITE.address}</dd>
       <dt>Country of origin</dt><dd>Austria (EU)</dd>
-      <dt>MRP</dt><dd>${formatINR(p.price)} (incl. of all taxes) <span class="badge-pending">Placeholder</span></dd>
+      <dt>MRP</dt><dd>${formatINR(p.price)} (incl. of all taxes)</dd>
       <dt>Net contents</dt><dd>1 frequency chip + fixing plasters</dd>
       <dt>Customer care</dt><dd>${SITE.phone} · ${SITE.email}</dd>
     </dl>
@@ -84,7 +84,7 @@ function pdpMain(p) {
         <h1 class="pdp__title">${p.name}</h1>
         ${p.medical ? '<p><span class="badge-pending">Medical device (EU)</span></p>' : ""}
         <div class="pdp__price">${formatINR(p.price)} <small>incl. GST</small></div>
-        <p class="pdp__mrp-note">MRP inclusive of all taxes · Free shipping across India <span class="badge-pending">Price placeholder</span></p>
+        <p class="pdp__mrp-note">MRP inclusive of all taxes · Free shipping across India</p>
         <p class="lede">${p.short}</p>
         <ul class="usp-inline">
         ${benefits}

@@ -1,5 +1,5 @@
 /* Product catalogue — e.CHI frequency chips (India range)
-   NOTE: All INR prices are PLACEHOLDERS pending final MRP from Avana/Veya. */
+   MRP for every chip: ₹18,400 incl. GST. */
 "use strict";
 
 const products = [
@@ -9,7 +9,7 @@ const products = [
     name: "Knee Osteoarthritis",
     eyebrow: "e.CHI Frequency Chips",
     flag: "Medical device*",
-    price: 12999, // PLACEHOLDER (EU price €127) — confirm INR MRP
+    price: 18400, // MRP incl. GST
     medical: true,
     short:
       "The e.CHI Knee Osteoarthritis chip is a non-invasive device developed for pain relief in knee osteoarthritis and has been clinically evaluated in Europe.",
@@ -26,7 +26,7 @@ const products = [
     images: { main: "assets/img/products/painfriend-product.png", alt: "assets/img/products/painfriend-application.jpg" },
     name: "PainFriend",
     eyebrow: "e.CHI Frequency Chips",
-    price: 9999, // PLACEHOLDER (EU price €99) — confirm INR MRP
+    price: 18400, // MRP incl. GST
     short: "Your everyday companion for general, localised discomfort — applied like a patch, active for up to nine months.",
     long: [
       "PainFriend is the all-rounder of the e.CHI family. Whether it is a tense shoulder after long hours at a desk or tired muscles after sport, PainFriend is designed to support the body's own balancing processes exactly where you place it.",
@@ -39,7 +39,7 @@ const products = [
     images: { main: "assets/img/products/inflammationfriend-product.png", alt: "assets/img/products/inflammationfriend-application.jpg" },
     name: "InflammationFriend",
     eyebrow: "e.CHI Frequency Chips",
-    price: 9999, // PLACEHOLDER — confirm INR MRP
+    price: 18400, // MRP incl. GST
     short: "Designed to support the body's own regulation where irritation and swelling slow you down.",
     long: [
       "Whether after intense training or in everyday strain, InflammationFriend is designed to support the body's own regulating processes in irritated areas.",
@@ -52,7 +52,7 @@ const products = [
     images: { main: "assets/img/products/backfriend-product.png", alt: "assets/img/products/backfriend-application.jpg" },
     name: "BackFriend",
     eyebrow: "e.CHI Frequency Chips",
-    price: 9999, // PLACEHOLDER — confirm INR MRP
+    price: 18400, // MRP incl. GST
     short: "Support for a hard-working back — from desk chairs to long drives to lifting days.",
     long: [
       "Our backs carry us through everything — long commutes, desk marathons, heavy bags. BackFriend is designed to support the body's own regulation along the back, wherever you need it.",

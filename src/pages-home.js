@@ -99,10 +99,6 @@ function homeMain() {
       <a class="btn" href="products.html">Discover now</a>
     </div>
   </div>
-  <div class="hero__dots">
-    <button class="hero__dot is-active" aria-label="Slide 1">1</button>
-    <button class="hero__dot" aria-label="Slide 2">2</button>
-  </div>
 </section>
 
 ${uspStrip()}
@@ -197,22 +193,6 @@ ${explainerSection()}
     </div>
     <p class="lede">Frequently asked questions, briefly explained.</p>
     ${faqAccordion(FAQ_HOME)}
-  </div>
-</section>
-
-<!-- ============================== NEWSLETTER ============================== -->
-<section class="section section--tight">
-  <div class="container">
-    <div class="newsletter">
-      <h2 class="display display--sm">Subscribe and get<br><strong>10% off your first order</strong></h2>
-      <p class="lede" style="margin-inline:auto">Tips on frequency therapy, new products for India and exclusive offers — no spam, unsubscribe anytime.</p>
-      <form data-demo-form data-success="Welcome aboard! Your 10% code is on its way.">
-        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
-        <input type="tel" name="whatsapp" placeholder="WhatsApp number (+91…)" pattern="^(\\+91[\\-\\s]?)?[6-9][0-9]{9}$" aria-label="WhatsApp number">
-        <button class="btn" type="submit">Subscribe</button>
-      </form>
-      <p class="form-note">No spam — unsubscribe anytime.</p>
-    </div>
   </div>
 </section>`;
 }

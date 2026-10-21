@@ -6,8 +6,8 @@ const SITE = {
   baseUrl: "https://www.echi-india.in", // PLACEHOLDER: replace with the final domain
   phone: "044-2233 1061", // Avana office: 044-2233 1061 / 1062 / 1063
   whatsapp: "91XXXXXXXXXX", // PLACEHOLDER: WhatsApp business number (digits only)
-  email: "info@avanasurgical.com",
-  address: "Avana Surgical Systems Pvt Ltd, No.91, Sundar Nagar 4th Avenue, Nandambakkam, Chennai, Tamil Nadu 600 032, India",
+  email: "info@avanamedical.com",
+  address: "Avana Medical Devices Pvt Ltd, No.91, Sundar Nagar 4th Avenue, Nandambakkam, Chennai, Tamil Nadu 600 032, India",
   gstin: "[GSTIN PLACEHOLDER]",
 };
 
@@ -28,12 +28,10 @@ const ICONS = {
   linkedin: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M8 10.8V16.5M8 7.5v.01M11.6 16.5v-3.4a2.2 2.2 0 0 1 4.4 0v3.4"/></svg>',
 };
 
-/* e.CHI wordmark: rounded-rectangle outline with "e.CHI" — mirrors the original mark */
-function echiLogo(color) {
-  return `<svg viewBox="0 0 150 74" role="img" aria-label="e.CHI" xmlns="http://www.w3.org/2000/svg">
-    <rect x="3" y="3" width="144" height="68" rx="22" fill="none" stroke="${color}" stroke-width="5"/>
-    <text x="75" y="49" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="30" font-weight="600" letter-spacing="1" fill="${color}">e.CHI</text>
-  </svg>`;
+/* Official e.CHI badge logo (as used on e-chi.de): white over the dark hero, grey on light headers */
+function echiLogo() {
+  return `<img class="brand__logo brand__logo--white" src="assets/img/echi-logo-white.png" alt="e.CHI" width="694" height="338">
+    <img class="brand__logo brand__logo--grey" src="assets/img/echi-logo-grey.png" alt="" aria-hidden="true" width="694" height="338">`;
 }
 
 const NAV = [
@@ -54,7 +52,6 @@ function head({ title, description, path, ogType = "website", schema = [], extra
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow"><!-- PREVIEW ONLY: remove this line at go-live so the site can be indexed -->
   <title>${title}</title>
   <meta name="description" content="${description}">
   <link rel="canonical" href="${url}">
@@ -82,11 +79,11 @@ function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "e.CHI India — Avana Surgical Systems Pvt Ltd",
+    name: "e.CHI India — Avana Medical Devices Pvt Ltd",
     url: SITE.baseUrl,
     logo: SITE.baseUrl + "/assets/img/favicon.svg",
     description:
-      "Authorised distributor of e.CHI by Veya Frequencies in India. Portable frequency therapy chips, imported and distributed by Avana Surgical Systems Pvt Ltd, Chennai.",
+      "Authorised distributor of e.CHI by Veya Frequencies in India. Portable frequency therapy chips, distributed in India by Avana Medical Devices Pvt Ltd, Chennai.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Chennai",
@@ -124,9 +121,8 @@ ${announcementBar()}
 <header class="${cls}" id="site-header">
   <div class="container header__inner">
     <div class="header__left">
-      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">${ICONS.menu}</button>
-      <a class="header__avana" href="about.html" title="Avana Surgical Systems">
-        <img class="header__avana-color" src="assets/img/avana-logo.webp" alt="Avana Surgical Systems" width="2000" height="742">
+      <a class="header__avana" href="about.html" title="Avana Medical Devices">
+        <img class="header__avana-color" src="assets/img/avana-logo.webp" alt="Avana Medical Devices" width="2000" height="742">
         <img class="header__avana-light" src="assets/img/avana-logo-light.webp" alt="" aria-hidden="true" width="2000" height="742">
       </a>
     </div>
@@ -135,6 +131,7 @@ ${announcementBar()}
       <nav class="nav" aria-label="Main navigation">
         ${NAV.map((n) => `<a href="${n.href}"${current === n.href ? ' class="is-current"' : ""}>${n.label}</a>`).join("\n        ")}
       </nav>
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">${ICONS.menu}</button>
     </div>
   </div>
 </header>
@@ -142,10 +139,9 @@ ${announcementBar()}
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
   ${NAV.map((n) => `<a href="${n.href}">${n.label}</a>`).join("\n  ")}
   <a href="faq.html">FAQ</a>
-  <a href="become-a-partner.html">Become a Partner</a>
   <div class="mobile-nav__foot">
     e.CHI by Veya Frequencies<br>
-    Distributed in India by Avana Surgical Systems Pvt Ltd, Chennai
+    Distributed in India by Avana Medical Devices Pvt Ltd, Chennai
   </div>
 </nav>`;
 }
@@ -259,8 +255,8 @@ function footer() {
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="about.html" title="Avana Surgical Systems"><img class="footer__brand-logo" src="assets/img/avana-logo-light.webp" alt="Avana Surgical Systems" width="2000" height="742" loading="lazy"></a>
-        <p style="max-width:34ch">e.CHI by Veya Frequencies, Austria/Germany.<br>Imported and distributed in India by Avana Surgical Systems Pvt Ltd, Chennai.</p>
+        <a href="about.html" title="Avana Medical Devices"><img class="footer__brand-logo" src="assets/img/avana-logo-light.webp" alt="Avana Medical Devices" width="2000" height="742" loading="lazy"></a>
+        <p style="max-width:34ch">e.CHI by Veya Frequencies, Austria/Germany.</p>
         <div class="social-links" aria-label="Social media">
           <!-- PLACEHOLDER: link to e.CHI India social profiles when live -->
           <a href="#" aria-label="Instagram (coming soon)">${ICONS.instagram}</a>
@@ -279,10 +275,10 @@ function footer() {
         substitute for professional medical advice, diagnosis or treatment. If you have physical complaints, please consult a
         doctor. Do not use e.CHI chips if you have epilepsy, severe heart failure, an organ transplant or a severe mental
         illness — see our <a href="faq.html" class="text-link" style="color:inherit">FAQ on contraindications</a>.
-        Avana Surgical Systems Pvt Ltd is the importer and distributor and makes no product-efficacy claims of its own.
+        Avana Medical Devices Pvt Ltd is the authorised distributor and makes no product-efficacy claims of its own.
       </p>
       <div class="footer__bottom">
-        <span>© 2026 Veya Frequencies · Distributed in India by Avana Surgical Systems Pvt Ltd</span>
+        <span>© 2026 Veya Frequencies · Distributed in India by Avana Medical Devices Pvt Ltd</span>
         <a href="#top" id="footer-top-link">Back to top ↑</a>
       </div>
     </div>
