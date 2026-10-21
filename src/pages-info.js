@@ -185,7 +185,7 @@ function aboutMain() {
         <span class="map-frame__pin">${ICONS.pin}</span>
         <strong>Avana Medical Devices Pvt Ltd</strong>
       </a>
-      <iframe src="https://www.google.com/maps?q=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032&z=16&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: Avana Medical Devices Pvt Ltd, Chennai"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.049816003348!2d80.19869659999999!3d13.0148403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267c5385ce16b%3A0x4f409925c8bc2992!2sAVANA%20Medical%20Devices%20Pvt%20Ltd%2C!5e1!3m2!1sen!2sin!4v1792564919635!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Map: Avana Medical Devices Pvt Ltd, Chennai"></iframe>
       <a class="map-frame__open" href="https://www.google.com/maps/search/?api=1&query=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032" target="_blank" rel="noopener" aria-label="Open in Google Maps" title="Open in Google Maps">${ICONS.pin}</a>
     </div>
     <p style="margin-top:16px"><a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=AVANA%20Medical%20Devices%20Pvt%20Ltd%2C%20Sundar%20Nagar%204th%20Avenue%2C%20Nandambakkam%2C%20Chennai%20600032" target="_blank" rel="noopener">Get directions</a></p>
