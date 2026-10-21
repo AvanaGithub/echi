@@ -199,11 +199,9 @@ img.header__avana-light { display: none; }
 .header.is-solid .brand__logo--white, .header--page .brand__logo--white { display: none; }
 .header.is-solid .brand__logo--grey, .header--page .brand__logo--grey { display: block; }
 
-/* Align the menu with the "avana" wordmark: the wordmark sits in the lower ~30% of the
-   logo image (the leaf mark fills the top), so drop the nav to the wordmark's centre line. */
 :root { --avana-h: 46px; }
 .header__avana img { height: var(--avana-h); }
-.header__right .nav { transform: translateY(calc(var(--avana-h) * 0.345)); }
+/* nav sits on the header's vertical centre line, level with the e.CHI logo */
 
 .header__utils { display: flex; align-items: center; justify-content: flex-end; gap: clamp(8px, 1.4vw, 16px); }
 .header__utils .icon-btn {
@@ -258,7 +256,6 @@ img.header__avana-light { display: none; }
   background: none; border: 0; box-shadow: none; border-radius: 0;
   color: inherit; padding: 6px; margin-right: -6px; cursor: pointer;
   -webkit-appearance: none; appearance: none;
-  transform: translateY(calc(var(--avana-h) * 0.345));
 }
 
 /* mobile drawer */
