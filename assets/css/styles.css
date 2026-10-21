@@ -709,6 +709,27 @@ img.header__avana-light { display: none; }
 .page-hero { padding: calc(var(--header-h) + clamp(30px, 6vw, 70px)) 0 clamp(30px, 6vw, 60px); }
 .page-hero--mist { background: var(--mist); }
 
+/* page hero with full-bleed banner image */
+.page-hero--banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  color: #fff;
+  padding: calc(var(--header-h) + clamp(50px, 9vw, 110px)) 0 clamp(50px, 9vw, 100px);
+}
+.page-hero--banner .cover-img { z-index: 0; }
+.page-hero--banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(75deg, rgba(2,1,1,0.72) 0%, rgba(2,1,1,0.42) 50%, rgba(2,1,1,0.12) 85%);
+}
+.page-hero--banner .container { position: relative; z-index: 2; }
+.page-hero--banner .breadcrumbs { color: rgba(255,255,255,0.75); }
+.page-hero--banner .breadcrumbs a:hover { color: var(--accent); }
+.page-hero--banner .lede { color: rgba(255,255,255,0.9); }
+
 /* ------------------------------------------------------------ placeholders */
 .ph {
   position: absolute; inset: 0;

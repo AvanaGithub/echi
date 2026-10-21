@@ -6,7 +6,8 @@ const { productCard } = require("./pages-home");
 
 function collectionMain() {
   return `
-<section class="page-hero page-hero--mist">
+<section class="page-hero page-hero--banner">
+  <img class="cover-img" src="assets/img/products/backfriend-application.jpg" alt="" aria-hidden="true" width="900" height="900">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Products</p>
     <h1 class="display display--md">e.CHI <strong>frequency chips</strong></h1>
