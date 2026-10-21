@@ -4,7 +4,8 @@ const { ICONS, SITE, explainerSection } = require("./layout");
 
 function functionMain() {
   return `
-<section class="page-hero page-hero--mist">
+<section class="page-hero page-hero--banner">
+  <img class="cover-img" src="assets/img/function/wave-2.jpg" alt="" aria-hidden="true" width="1920" height="1080">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Function</p>
     <h1 class="display display--md">How e.CHI<br><strong>frequency chips work</strong></h1>
@@ -101,7 +102,8 @@ ${explainerSection()}
 
 function storiesMain() {
   return `
-<section class="page-hero page-hero--mist">
+<section class="page-hero page-hero--banner">
+  <img class="cover-img" src="assets/video/hero-1.jpg" alt="" aria-hidden="true" width="1280" height="720">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Stories</p>
     <h1 class="display display--md">Stories from India —<br><strong>coming soon</strong></h1>
@@ -119,7 +121,8 @@ function storiesMain() {
 
 function aboutMain() {
   return `
-<section class="page-hero page-hero--mist">
+<section class="page-hero page-hero--banner">
+  <img class="cover-img" src="assets/video/echi-chip.jpg" alt="" aria-hidden="true" width="900" height="720">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / About Us</p>
     <h1 class="display display--md">About <strong>e.CHI</strong><br>and your partner in India</h1>

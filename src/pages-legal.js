@@ -2,8 +2,9 @@
 "use strict";
 const { SITE } = require("./layout");
 
-const wrap = (crumb, titleHtml, body) => `
-<section class="page-hero page-hero--mist">
+const wrap = (crumb, titleHtml, bannerImg, body) => `
+<section class="page-hero ${bannerImg ? "page-hero--banner" : "page-hero--mist"}">
+  ${bannerImg ? `<img class="cover-img" src="${bannerImg}" alt="" aria-hidden="true" width="900" height="900">` : ""}
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / ${crumb}</p>
     <h1 class="display display--md">${titleHtml}</h1>
@@ -16,7 +17,7 @@ const wrap = (crumb, titleHtml, body) => `
 </section>`;
 
 function shippingMain() {
-  return wrap("Shipping Policy", "Shipping<br><strong>policy</strong>", `
+  return wrap("Shipping Policy", "Shipping<br><strong>policy</strong>", "assets/img/products/backfriend-application.jpg", `
     <p><em>Last updated: 22/09/2026</em></p>
     <h2>Coverage & charges</h2>
     <p>We deliver e.CHI products across India through reputed courier partners. <strong>Shipping is free on all orders.</strong> You can check serviceability for your PIN code on any product page.</p>
@@ -36,7 +37,7 @@ function shippingMain() {
 }
 
 function returnsMain() {
-  return wrap("Returns & Refunds", "Returns &<br><strong>refunds</strong>", `
+  return wrap("Returns & Refunds", "Returns &<br><strong>refunds</strong>", "assets/img/products/painfriend-application.jpg", `
     <p><em>Last updated: 22/09/2026</em></p>
     <h2>7-day return window</h2>
     <p><strong>Unopened</strong> e.CHI chips in their original, sealed packaging can be returned within <strong>7 days of delivery</strong> for a full refund of the product price.</p>
