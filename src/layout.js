@@ -64,7 +64,8 @@ function head({ title, description, path, ogType = "website", schema = [], extra
   <meta property="og:image" content="${SITE.baseUrl}/assets/img/og-default.svg"><!-- PLACEHOLDER: replace with licensed OG image (1200x630 WebP) from Veya -->
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-avana.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/favicon-avana.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -81,7 +82,7 @@ function organizationSchema() {
     "@type": "Organization",
     name: "e.CHI India — Avana Medical Devices Pvt Ltd",
     url: SITE.baseUrl,
-    logo: SITE.baseUrl + "/assets/img/favicon.svg",
+    logo: SITE.baseUrl + "/assets/img/favicon-avana.png",
     description:
       "Authorised distributor of e.CHI by Veya Frequencies in India. Portable frequency therapy chips, distributed in India by Avana Medical Devices Pvt Ltd, Chennai.",
     address: {
