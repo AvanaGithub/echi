@@ -103,7 +103,7 @@ ${explainerSection()}
 function storiesMain() {
   return `
 <section class="page-hero page-hero--banner">
-  <img class="cover-img" src="assets/video/hero-1.jpg" alt="" aria-hidden="true" width="1280" height="720">
+  <img class="cover-img" src="assets/img/banners/stories-banner.jpg" alt="" aria-hidden="true" width="1800" height="1013">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Stories</p>
     <h1 class="display display--md">Stories from India —<br><strong>coming soon</strong></h1>
@@ -122,7 +122,7 @@ function storiesMain() {
 function aboutMain() {
   return `
 <section class="page-hero page-hero--banner">
-  <img class="cover-img" src="assets/video/echi-chip.jpg" alt="" aria-hidden="true" width="900" height="720">
+  <img class="cover-img" src="assets/img/banners/about-banner.jpg" alt="" aria-hidden="true" width="1800" height="1013">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / About Us</p>
     <h1 class="display display--md">About <strong>e.CHI</strong><br>and your partner in India</h1>
@@ -151,12 +151,12 @@ function aboutMain() {
     <div class="split__media brand-tile">
       <!-- Replace with an Avana team / Chennai office photo when available -->
       <img src="assets/img/avana-logo-light.webp" alt="Avana Medical Devices Pvt Ltd" width="2000" height="742" loading="lazy">
-      <span class="brand-tile__caption">Chennai · Mumbai · Delhi · Bengaluru</span>
     </div>
     <div>
       <span class="eyebrow">Your e.CHI partner in India</span>
       <h2 class="display display--sm">Transforming Healthcare<br><strong>through Technology</strong></h2>
       <p class="lede">AVANA is building on a strong history of success to enhance the value it provides to healthcare providers and their patients. The company shares a commitment with healthcare providers to partner in providing the best and the most innovative technologies, treatments, and solutions to deliver high quality, cost-effective patient care.</p>
+      <p class="lede">Headquartered in Chennai, Avana serves customers nationwide through its offices in Mumbai, Delhi and Bengaluru.</p>
     </div>
   </div>
 </section>

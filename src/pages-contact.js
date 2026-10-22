@@ -15,7 +15,7 @@ const FAQ_EXTRA = [
 function contactMain() {
   return `
 <section class="page-hero page-hero--banner">
-  <img class="cover-img" src="assets/img/products/inflammationfriend-application.jpg" alt="" aria-hidden="true" width="900" height="900">
+  <img class="cover-img" src="assets/img/banners/contact-banner.jpg" alt="" aria-hidden="true" width="1800" height="1013">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / Contact</p>
     <h1 class="display display--md">We're here<br><strong>to help</strong></h1>
@@ -68,7 +68,7 @@ function contactMain() {
 function faqMain() {
   return `
 <section class="page-hero page-hero--banner">
-  <img class="cover-img" src="assets/img/products/knee-application.jpg" alt="" aria-hidden="true" width="900" height="900">
+  <img class="cover-img" src="assets/img/banners/faq-banner.jpg" alt="" aria-hidden="true" width="1800" height="1013">
   <div class="container">
     <p class="breadcrumbs"><a href="index.html">Home</a> / FAQ</p>
     <h1 class="display display--md">Frequently asked<br><strong>questions</strong></h1>
